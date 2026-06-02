@@ -1,5 +1,7 @@
 # ffmpeg-floating-watermark
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Stamp your logo onto a whole folder of videos so nobody can steal them — with one command.**
 
 You give it two things: a folder of videos and your logo image. It puts your logo on every video as a softly **glowing badge that drifts slowly around the screen** — not a dead corner stamp, but a moving, glowing mark that's much harder for re-uploaders to crop off. Then it hands you a `watermarked/` folder with all the finished videos. That's it.
@@ -87,16 +89,4 @@ These are hard-won and baked into the script — don't undo them when editing:
 
 ---
 
-## 中文说明
-
-一条命令给一整个文件夹的竖屏/短剧视频批量加 **飘动发光水印**。基于 FFmpeg,专为短剧社媒运营设计:给一个文件夹(几十集)和一张 logo,全部自动处理,竖屏横屏都行,支持断点续传。
-
-水印会沿平滑的伪随机轨迹缓慢飘动,带 **Screen 叠加** 的霓虹发光质感,并自动避开底部字幕区——看起来是设计过的,而不是死贴一个角标,也更难被裁掉。
-
-### 快速开始
-
-```powershell
-.\scripts\add_watermark.ps1 -InputPath "E:\某短剧\压制视频" -Logo "E:\某短剧\logo.png"
-```
-
-成品默认输出到 `<InputPath>\watermarked\`,原视频不动。参数说明见上方英文表格。第一次在没装 FFmpeg 的电脑上跑,脚本会用 winget 自动安装(`Gyan.FFmpeg`),多花一两分钟正常。
+中文使用说明见 **[README.zh-CN.md](README.zh-CN.md)**。
