@@ -1,8 +1,15 @@
 # ffmpeg-floating-watermark
 
-Batch-add a **floating, glowing watermark** to short-form / vertical videos with a single command. Built on FFmpeg. Designed for short-drama (短剧) social-media operations: point it at a folder of dozens of episodes and one logo, and it processes them all — portrait or landscape, auto-scaled, resumable.
+**Stamp your logo onto a whole folder of videos so nobody can steal them — with one command.**
 
-> The logo drifts slowly along a smooth pseudo-random path with a soft neon **Screen-blend** glow, and automatically stays clear of the bottom subtitle band — so it looks intentional, not like a static stamp, and is harder to crop out.
+You give it two things: a folder of videos and your logo image. It puts your logo on every video as a softly **glowing badge that drifts slowly around the screen** — not a dead corner stamp, but a moving, glowing mark that's much harder for re-uploaders to crop off. Then it hands you a `watermarked/` folder with all the finished videos. That's it.
+
+Made for people posting lots of short videos (短剧 / Shorts / Reels / TikTok) who are tired of doing it one clip at a time:
+
+- **Dead simple** — two arguments, one command. No video-editing app, no timeline, no per-clip fiddling.
+- **Does the whole batch** — drop 50 episodes in a folder, run it once, walk away. Stops halfway? Just run it again, it picks up where it left off.
+- **Just works** — figures out each video's size on its own (vertical or horizontal), keeps the watermark out of the subtitle area, and even installs FFmpeg for you on first run if you don't have it.
+- **Your originals stay untouched** — results go into a separate folder.
 
 ## Features
 
